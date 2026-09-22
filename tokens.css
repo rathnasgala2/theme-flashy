@@ -1,0 +1,76 @@
+@layer gala-tokens {
+  [data-gala-publication-root][data-gala-resolved-color-mode="light"] {
+    --gala-border-width: 2px;
+    --gala-color-accent: #c400a0;
+    --gala-color-border: #7d6a91;
+    --gala-color-canvas: #ffffff;
+    --gala-color-code-canvas: #f6eefc;
+    --gala-color-code-text: #150a1e;
+    --gala-color-danger: #d6003d;
+    --gala-color-focus: #c400a0;
+    --gala-color-link: #c400a0;
+    --gala-color-link-visited: #6a1bd6;
+    --gala-color-on-accent: #ffffff;
+    --gala-color-selection: #f6c6ea;
+    --gala-color-success: #046b39;
+    --gala-color-surface: #f6eefc;
+    --gala-color-surface-raised: #ecdcfb;
+    --gala-color-text: #150a1e;
+    --gala-color-text-muted: #5a4a68;
+    --gala-color-warning: #a15c00;
+    --gala-content-measure: 40rem;
+    --gala-focus-width: 3px;
+    --gala-font-body: Inter, Helvetica Neue, Arial, sans-serif;
+    --gala-font-heading: Poppins, Helvetica Neue, Arial, sans-serif;
+    --gala-font-mono: SFMono-Regular, Menlo, Consolas, monospace;
+    --gala-radius-medium: 1rem;
+    --gala-radius-small: 0.5rem;
+    --gala-space-1: 0.25rem;
+    --gala-space-2: 0.5rem;
+    --gala-space-3: 0.75rem;
+    --gala-space-4: 1rem;
+    --gala-space-6: 1.5rem;
+    --gala-space-8: 2rem;
+    --gala-weight-heading: 800;
+    --gala-weight-medium: 600;
+    --gala-weight-normal: 400;
+    --gala-weight-strong: 800;
+  }
+  [data-gala-publication-root][data-gala-resolved-color-mode="dark"] {
+    --gala-border-width: 2px;
+    --gala-color-accent: #ff7ae0;
+    --gala-color-border: #8f78ab;
+    --gala-color-canvas: #12081a;
+    --gala-color-code-canvas: #1e0f2c;
+    --gala-color-code-text: #f7ecff;
+    --gala-color-danger: #ff8fa3;
+    --gala-color-focus: #00e6ff;
+    --gala-color-link: #ff7ae0;
+    --gala-color-link-visited: #c79bff;
+    --gala-color-on-accent: #1a0a22;
+    --gala-color-selection: #4a1f42;
+    --gala-color-success: #63e6a0;
+    --gala-color-surface: #1e0f2c;
+    --gala-color-surface-raised: #2a1740;
+    --gala-color-text: #f7ecff;
+    --gala-color-text-muted: #cdb8e6;
+    --gala-color-warning: #ffd166;
+    --gala-content-measure: 40rem;
+    --gala-focus-width: 3px;
+    --gala-font-body: Inter, Helvetica Neue, Arial, sans-serif;
+    --gala-font-heading: Poppins, Helvetica Neue, Arial, sans-serif;
+    --gala-font-mono: SFMono-Regular, Menlo, Consolas, monospace;
+    --gala-radius-medium: 1rem;
+    --gala-radius-small: 0.5rem;
+    --gala-space-1: 0.25rem;
+    --gala-space-2: 0.5rem;
+    --gala-space-3: 0.75rem;
+    --gala-space-4: 1rem;
+    --gala-space-6: 1.5rem;
+    --gala-space-8: 2rem;
+    --gala-weight-heading: 800;
+    --gala-weight-medium: 600;
+    --gala-weight-normal: 400;
+    --gala-weight-strong: 800;
+  }
+}

@@ -32,8 +32,10 @@ README.md
 `stylesheets`/`cssLayers` shapes; this theme uses the three-file shape
 (`tokens.css`, `components.css`, `print.css`) with no `utilities.css`.
 `mark-spark.svg` is this theme's one declared passive asset (2026-09-25
-review, THD-H8): a 16x16 sanitizer-clean SVG mark, tiled as a
-`background-image` over the accent-filled `article-end` block.
+review, THD-H8): a 16x16 sanitizer-clean SVG mark, placed (not tiled) as
+a `background-image` in the corner of the accent-filled `article-end`
+block via explicit `background-size`/`background-position`/
+`background-repeat` (THF-H1, second pass).
 
 - **`package.json`** is DEC-097's closed, dependency-free, script-free
   object: exactly `name`, `version`, `license`, `files` (the unique
@@ -65,7 +67,7 @@ appears (2026-09-25 review, THF-M1): an accent `border-top` band on the
 header, an accent `border-bottom` rule under `h1`/`h2`, accent
 `li::marker`s, an accent-colored `blockquote`/`pre` rule, and an
 accent-filled `article-end` block using `color-on-accent` as real
-foreground text and tiling `mark-spark.svg` as a subtle texture
+foreground text and a placed `mark-spark.svg` mark in its corner
 (THF-H1/THD-H8). See `tokens.css` for every token value and
 `components.css` for the character-specific component rules; every
 other component rule is the same token-driven structure
@@ -206,13 +208,14 @@ pairs plus a fifth under `forced-colors` have all been removed
 (2026-09-25 review, THD-H1) — and instead aligns `color-focus` with
 `color-accent` in both palettes, so the ring `gala-base` paints is
 on-brand. The `@rathnasgala2/theme-tooling` release this repository is
-pinned to does not yet admit a pseudo-class in its own selector-catalog
-conformance script (`check-css-hooks.mjs`), so this theme cannot yet
-author its own `:hover`/`:visited` rules even though the contract now
-permits them (THF-H1, deferred pending a `theme-tooling` update).
-`theme.json.slotHooks` is the exact sorted set of the 51 hook IDs this
+pinned to now reads its selector-catalog conformance script's admitted
+pseudo-class set (`check-css-hooks.mjs`) straight from the published
+contract, so this theme authors its own `a:hover` (accent color) and
+`a:visited` (`color-link-visited`) rules (THF-H1, second pass).
+`theme.json.slotHooks` is the exact sorted set of the 50 hook IDs this
 CSS actually uses (not the whole 64-hook catalog — only the subset a
-theme actually styles is declared, per the S2 brief).
+theme actually styles is declared, per the S2 brief); the tooling now
+asserts this set-equality in both directions (THM-M3).
 
 `tooling/test/css-hooks.test.mjs` parses every stylesheet with `postcss` (a pinned
 exact version) and `postcss-selector-parser`, and fails the build if any
@@ -263,11 +266,12 @@ declaration block existed.
   `Highlight` mapping; `gala-base`'s real `:focus-visible` ring is a
   browser-drawn indicator that forced-colors mode already accounts for on
   its own.)
-- **`prefers-reduced-motion: reduce`**: collapses any animation/transition
-  duration to effectively zero at the root scope (defensive; this theme
-  declares no animations or transitions of its own, so this rule has no
-  visible effect today but keeps the obligation explicit and testable if a
-  future revision adds one).
+- **`prefers-reduced-motion: reduce`**: the template's `gala-base` layer
+  already collapses every element's (including `::before`/`::after`)
+  animation/transition duration to effectively zero with `!important`;
+  this theme declares no animations or transitions of its own and no
+  longer carries its own redundant copy of that guard (THD-L1, second
+  pass).
 - **Zoom/reflow**: this theme sets no fixed pixel widths that would prevent
   320px-wide reflow (`main`'s `max-width` is a `rem` content measure, never
   a lower bound); Playwright-driven 400% zoom/reflow, keyboard-journey and

@@ -16,6 +16,48 @@ next version; bumping `package.json`'s `version` for that release is an
 owner decision (recommended: `2.1.0`, since nothing below is a breaking
 change to the token/CSS-hook contract).
 
+### Changed (Second contract 2.1.0 conformance pass, 2026-09-25)
+
+- **THM-M3**: dropped `landmark-main-content` from `theme.json.slotHooks`
+  — the CSS only ever targets `main` (`landmark-main`); the shared
+  tooling's new set-equality check between `slotHooks` and actual CSS
+  usage caught the drift.
+- **THF-M2**: contract 2.1.0 adds three externalized contrast pairs
+  (`surface-raised`/`surface` >= 1.3 in both palettes, `accent`/`text` as
+  a non-text UI adjacency >= 3 in the dark palette). Moved
+  `color-surface-raised` to a more distinct purple in each palette and
+  the dark `color-accent` (and the `color-focus`/`color-link` tokens that
+  mirror it) from `#ff7ae0` to `#f52ec2`; every existing pair
+  (`color-on-accent`/`color-accent`, `color-accent`/`color-canvas`,
+  `color-accent`/`color-surface`, and the unlisted `color-accent`/
+  `color-code-canvas` adjacency the `pre` rule renders) stays
+  comfortably above its floor.
+- **THF-H1**: added `a:hover` (accent color, thicker underline) and
+  `a:visited` (the `color-link-visited` token, defined since the first
+  pass but never used by a selector). Gave the `article-end` block's
+  spark-mark SVG an explicit `background-size`/`background-position`/
+  `background-repeat` so it renders as a placed mark instead of tiling
+  as a repeating texture.
+- **THD-L1**: removed this theme's own root-only
+  `prefers-reduced-motion` guard from `components.css` — the template's
+  `gala-base` layer already applies the same `!important` freeze to
+  every element, including `::before`/`::after`, so the theme's copy was
+  redundant.
+- **THD-L2**: `print.css`'s `a` rule no longer repeats
+  `text-decoration-line: underline`, which the screen `a` rule in
+  `components.css` already sets and print doesn't clear — only the
+  print-specific color override remains.
+- **THD-M10**: re-pinned all three workflows' sibling checkouts to
+  `@rathnasgala2/theme-tooling` `8fd9b36` and `@rathnasgala2/template`
+  `d2b2f0f`, and added a `visual` CI job running the shared Playwright +
+  axe-core harness (`visual:check`), matching the pattern the other
+  reference themes already carry.
+- **THF-M3 (gap, not fixed)**: `text-decoration-skip-ink` is still not in
+  the shared tooling's closed CSS property catalog even after contract
+  2.1.0's pseudo-class/icon-property additions — reported upstream rather
+  than worked around.
+- `theme.json`'s digest cycle regenerated against the pins above.
+
 ### Changed (Contract 2.1.0 adoption, 2026-09-25)
 
 - `theme.json`: `contractVersion` moved to `2.1.0`, `stylingContractDigest`

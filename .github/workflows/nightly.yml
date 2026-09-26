@@ -27,8 +27,8 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
-      # Pinned to the review/2026-09-25 commit carrying the unreleased
-      # contract 2.1.0 changes (not yet published; see the template's own
+      # Pinned to the commit tagged @rathnasgala2/template 2.1.0 (unreleased)
+      # (not yet published to the registry; see the template's own
       # CHANGELOG.md Unreleased section, recommended release 2.1.0).
       # `css:check`/`grammar:check` read this checkout by path
       # (WORKSPACE_ROOT/template) for the S2-T12 theme-styling hook

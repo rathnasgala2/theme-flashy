@@ -2,8 +2,8 @@
   "schemaId": "urn:gala:schema:theme-contract:2.0.0",
   "schemaVersion": "2.0.0",
   "themeId": "flashy",
-  "package": "@rathnasgala2/theme-flashy@2.0.0",
-  "contractVersion": "2.0.0",
+  "package": "@rathnasgala2/theme-flashy@2.1.0",
+  "contractVersion": "2.1.0",
   "templateRange": "^2.0.0",
   "stylesheets": ["tokens.css", "components.css", "print.css"],
   "cssLayers": ["gala-tokens", "gala-components", "gala-print"],
@@ -39,7 +39,6 @@
     "landmark-footer",
     "landmark-header",
     "landmark-main",
-    "landmark-main-content",
     "landmark-navigation",
     "media-image",
     "page-error",
@@ -61,12 +60,12 @@
     "slot-header-actions"
   ],
   "tokens": [
-    { "key": "border-width", "type": "length", "light": "2px", "dark": "2px" },
+    { "key": "border-width", "type": "length", "light": "1px", "dark": "1px" },
     {
       "key": "color-accent",
       "type": "color",
       "light": "#c400a0",
-      "dark": "#ff7ae0"
+      "dark": "#f52ec2"
     },
     {
       "key": "color-border",
@@ -102,13 +101,13 @@
       "key": "color-focus",
       "type": "color",
       "light": "#c400a0",
-      "dark": "#00e6ff"
+      "dark": "#f52ec2"
     },
     {
       "key": "color-link",
       "type": "color",
       "light": "#c400a0",
-      "dark": "#ff7ae0"
+      "dark": "#f52ec2"
     },
     {
       "key": "color-link-visited",
@@ -143,8 +142,8 @@
     {
       "key": "color-surface-raised",
       "type": "color",
-      "light": "#ecdcfb",
-      "dark": "#2a1740"
+      "light": "#e0c8f5",
+      "dark": "#382454"
     },
     {
       "key": "color-text",
@@ -247,22 +246,29 @@
     {
       "path": "tokens.css",
       "mediaType": "text/css",
-      "byteLength": "2688",
-      "sha256": "sha256:1e31417fdb0efdb2362283e4f80c74c2ef0274b74268fc206a76eecd6a416333",
+      "byteLength": "5986",
+      "sha256": "sha256:271c14047f702e447c26451866d1bc245948faf3f1a1268e1d8c53b4178f010c",
       "license": "Apache-2.0"
     },
     {
       "path": "components.css",
       "mediaType": "text/css",
-      "byteLength": "8334",
-      "sha256": "sha256:94f2a008ea0a30ad456098e14d0537a3ae860c17dec83e65328a2c1534da0cd3",
+      "byteLength": "8533",
+      "sha256": "sha256:9ee1b01c7d03b46e8df8b2f475fb7f6df1ff53d2a9cc637b5c454741c18eb8d8",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "mark-spark.svg",
+      "mediaType": "image/svg+xml",
+      "byteLength": "251",
+      "sha256": "sha256:ee6f7269d8c8d090af74b6dff2dcc33243041a6003af9d0c65b27e5ae1f6c743",
       "license": "Apache-2.0"
     },
     {
       "path": "print.css",
       "mediaType": "text/css",
-      "byteLength": "725",
-      "sha256": "sha256:c8c85ada0cb6c824d550f55ee4edc6a366241461850dd5c4ffa0d184fe7fc5c0",
+      "byteLength": "833",
+      "sha256": "sha256:9e5e1c6bba01f8e9f750115183b3e39b63218309a9fe41e2347deb97c961c2f0",
       "license": "Apache-2.0"
     }
   ],
@@ -274,13 +280,13 @@
     "fixture-token-catalog-contrast"
   ],
   "browserPolicyRef": "gala-theme-css-v2-20211224",
-  "integrity": "sha256:dfb34e63a5a1856d9187b90dee9e5e8c601e2c0388ee9a6e4f67798a3579c5ff",
+  "integrity": "sha256:70c3a374eaa1a3b175a76d4468e1c8f0cafce1ba2c156287dce3560ed642273e",
   "budgets": {
     "maximumFileBytes": "16384",
     "maximumTotalBytes": "40960",
     "maximumFiles": 8
   },
-  "fixtureDigest": "sha256:09f884d4ba143de3e9c861be85698e94bc7e36639d7a77d28b459675b6553629",
-  "evidenceDigest": "sha256:a4a5a264fdfebb5ff544b9e04b1b245fb8ff997edf4c71500d5c58b12fd28802",
-  "stylingContractDigest": "sha256:46b43a6d1775f88bf2ded331512bd0cf27d232e256e40a89bda773e50897877f"
+  "fixtureDigest": "sha256:42ac8f857fb188b6e645f2d422fd87584f4a6273daaf1d0245a85698bd2a181a",
+  "evidenceDigest": "sha256:42c672b6b2b44c319c5a5e937910f080575b21b3874bb531a7283c7e4f8a0f0c",
+  "stylingContractDigest": "sha256:4aca7e9794bddfb2c3afd22f4efd078e7dcf69dde9d62ce52d28cec19aef8b91"
 }

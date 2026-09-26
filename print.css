@@ -17,9 +17,10 @@
       border-top: var(--gala-border-width) solid #000000;
     }
 
+    /* Only the color differs from the screen `a` rule in components.css;
+       the underline already holds there and print doesn't remove it. */
     [data-gala-publication-root] a {
       color: #000000;
-      text-decoration-line: underline;
     }
 
     [data-gala-publication-root] pre {

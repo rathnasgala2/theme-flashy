@@ -268,6 +268,15 @@
     text-underline-offset: 0.15em;
   }
 
+  [data-gala-publication-root] a:visited {
+    color: var(--gala-color-link-visited);
+  }
+
+  [data-gala-publication-root] a:hover {
+    color: var(--gala-color-accent);
+    text-decoration-thickness: 0.2em;
+  }
+
   [data-gala-publication-root] blockquote {
     border-inline-start: calc(var(--gala-border-width) * 2) solid
       var(--gala-color-accent);
@@ -285,6 +294,9 @@
   [data-gala-publication-root] [data-gala-slot="article-end"] {
     background-color: var(--gala-color-accent);
     background-image: url("mark-spark.svg");
+    background-position: top var(--gala-space-4) right var(--gala-space-6);
+    background-repeat: no-repeat;
+    background-size: var(--gala-space-8) var(--gala-space-8);
     color: var(--gala-color-on-accent);
     border-radius: var(--gala-radius-medium);
   }

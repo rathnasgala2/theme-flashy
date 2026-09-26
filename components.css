@@ -227,7 +227,7 @@
 
   [data-gala-publication-root] [data-gala-slot="header-actions"] {
     display: flex;
-    gap: var(--gala-space-2);
+    gap: var(--gala-space-3);
   }
 
   [data-gala-publication-root] [data-gala-slot="footer-profile"],
@@ -287,10 +287,6 @@
     background-image: url("mark-spark.svg");
     color: var(--gala-color-on-accent);
     border-radius: var(--gala-radius-medium);
-  }
-
-  [data-gala-publication-root] [data-gala-slot="header-actions"] {
-    gap: var(--gala-space-3);
   }
 
   @media (prefers-reduced-motion: reduce) {

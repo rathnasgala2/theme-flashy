@@ -284,6 +284,7 @@
 
   [data-gala-publication-root] [data-gala-slot="article-end"] {
     background-color: var(--gala-color-accent);
+    background-image: url("mark-spark.svg");
     color: var(--gala-color-on-accent);
     border-radius: var(--gala-radius-medium);
   }

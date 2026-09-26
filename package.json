@@ -8,6 +8,7 @@
   },
   "files": [
     "components.css",
+    "mark-spark.svg",
     "print.css",
     "theme.json",
     "tokens.css"

@@ -301,13 +301,6 @@
     border-radius: var(--gala-radius-medium);
   }
 
-  @media (prefers-reduced-motion: reduce) {
-    [data-gala-publication-root] {
-      animation-duration: 0.001ms !important;
-      transition-duration: 0.001ms !important;
-    }
-  }
-
   @media (forced-colors: active) {
     [data-gala-publication-root] a {
       color: LinkText;

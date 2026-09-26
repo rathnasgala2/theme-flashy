@@ -76,13 +76,10 @@ other component rule is the same token-driven structure
 Links carry a `text-decoration-thickness: 0.1em`/`text-underline-offset:
 0.15em` treatment (toned down from an earlier, more aggressive 0.15em/
 0.2em now that the accent appears throughout the page — 2026-09-25
-review, THF-M3). `text-decoration-skip-ink` cannot be added alongside
-it: `@rathnasgala2/theme-tooling`'s `check-css-grammar.mjs` enforces a
-closed CSS property allowlist that does not include it, and that
-allowlist is not this repository's to extend. The thinner thickness and
-smaller offset mitigate, without eliminating, the skip-ink gap issue the
-original values made worse; explicit control remains deferred pending a
-`theme-tooling` grammar update.
+review, THF-M3) plus `text-decoration-skip-ink: auto`, so the underline
+no longer crosses descenders — `@rathnasgala2/theme-tooling`'s
+`check-css-grammar.mjs` now admits the property (`auto`/`none`/`all`) to
+its closed CSS property allowlist.
 
 ## Toolchain and how to run locally
 

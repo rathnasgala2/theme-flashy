@@ -52,10 +52,17 @@ change to the token/CSS-hook contract).
   `d2b2f0f`, and added a `visual` CI job running the shared Playwright +
   axe-core harness (`visual:check`), matching the pattern the other
   reference themes already carry.
-- **THF-M3 (gap, not fixed)**: `text-decoration-skip-ink` is still not in
-  the shared tooling's closed CSS property catalog even after contract
-  2.1.0's pseudo-class/icon-property additions — reported upstream rather
-  than worked around.
+- **THF-M3**: `text-decoration-skip-ink: auto` added to the flashy
+  theme's link rule, now that the shared tooling's closed CSS property
+  catalog admits it (`auto`/`none`/`all`).
+- Re-pinned all three workflows' sibling checkouts again to
+  `@rathnasgala2/theme-tooling` `ae2ee49`, which serves the `visual:check`
+  fixture over loopback HTTP (the theme CSS now actually loads during the
+  check), admits `text-decoration-skip-ink`, and adds `color-accent` on
+  `color-code-canvas` to its own contrast pair catalog — the `pre` border
+  adjacency this theme renders is now gated automatically instead of only
+  by manual verification. `sbom.cdx.json` regenerated against the moved
+  `theme-tooling` dependency tree.
 - `theme.json`'s digest cycle regenerated against the pins above.
 
 ### Changed (Contract 2.1.0 adoption, 2026-09-25)
@@ -93,13 +100,13 @@ change to the token/CSS-hook contract).
   repository depends on now checks `color-accent on color-canvas` (3:1,
   both palettes) — the accent-as-border-color pairing this theme's own
   CSS renders. `color-accent on color-code-canvas` (the `pre` rule) is
-  not independently gated by that shared script; manually verified to
-  clear 3:1 in both palettes.
+  now gated by that shared script too (added in `theme-tooling` `ae2ee49`)
+  and clears 3:1 in both palettes.
 - **THF-M3**: toned down the underline treatment (`text-decoration-
 thickness`/`text-underline-offset` from 0.15em/0.2em to 0.1em/0.15em)
-  to mitigate the `text-decoration-skip-ink` gap issue the more
-  aggressive values made worse; the property itself remains blocked by
-  the shared tooling's closed CSS property grammar.
+  now that the accent appears throughout the page. `text-decoration-
+skip-ink: auto` was added separately once the shared tooling's closed
+  CSS property grammar admitted it (see the 2026-09-25 entry above).
 - **THD-H8**: shipped this theme's first decorative asset —
   `mark-spark.svg`, a 16x16 sanitizer-clean passive SVG mark declared in
   `theme.json.assets`/`package.json.files`, tiled as a `background-image`

@@ -10,7 +10,6 @@
   [data-gala-publication-root] header {
     background-color: var(--gala-color-surface);
     border-bottom: var(--gala-border-width) solid var(--gala-color-border);
-    padding: var(--gala-space-4) var(--gala-space-6);
   }
 
   [data-gala-publication-root] nav {
@@ -21,14 +20,12 @@
     display: block;
     margin: 0 auto;
     max-width: var(--gala-content-measure);
-    padding: var(--gala-space-6) var(--gala-space-4);
   }
 
   [data-gala-publication-root] footer {
     background-color: var(--gala-color-surface);
     border-top: var(--gala-border-width) solid var(--gala-color-border);
     color: var(--gala-color-text-muted);
-    padding: var(--gala-space-6) var(--gala-space-6);
   }
 
   [data-gala-publication-root] article {
@@ -76,14 +73,6 @@
   [data-gala-publication-root] a {
     color: var(--gala-color-link);
     text-decoration-line: underline;
-    /* THD-H1: a themed focus ring (`outline-color`/`outline-width`
-       alongside `outline-style: solid`, under `:focus-visible`) belongs
-       here, on `#main-content` and on `select` once the styling contract
-       publishes a pseudo-class catalog (TPL-H2). Until then, setting
-       `outline-style` unconditionally would paint a permanent ring on
-       every link, and `outline-color`/`outline-width` alone paint
-       nothing (the initial value of `outline-style` is `none`), so
-       neither is declared here. */
   }
 
   [data-gala-publication-root] blockquote {
@@ -134,7 +123,6 @@
 
   [data-gala-publication-root] img {
     border-radius: var(--gala-radius-small);
-    max-width: 100%;
   }
 
   [data-gala-publication-root] pre {
@@ -292,10 +280,6 @@
   @media (forced-colors: active) {
     [data-gala-publication-root] a {
       color: LinkText;
-    }
-
-    [data-gala-publication-root] #main-content {
-      outline-color: Highlight;
     }
 
     [data-gala-publication-root] select {

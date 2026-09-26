@@ -39,7 +39,6 @@
     "landmark-footer",
     "landmark-header",
     "landmark-main",
-    "landmark-main-content",
     "landmark-navigation",
     "media-image",
     "page-error",
@@ -287,7 +286,7 @@
     "maximumTotalBytes": "40960",
     "maximumFiles": 8
   },
-  "fixtureDigest": "sha256:391253bd4336e245bf892017b88f56f0c9f70802f4525fe1b812f5d0f4f5c4e6",
+  "fixtureDigest": "sha256:58869112bfea7303cd471030eaaab29cc08a44c38780209e0257495419ec9a01",
   "evidenceDigest": "sha256:0be488c43065c2a1880fdd77dfbc3314fdced3acb54adf0a43e7507daf5cabe9",
   "stylingContractDigest": "sha256:9abf99b73a20e034c784ec9648d1f96ea59b59b2ba89028b8c684d1b078275e4"
 }

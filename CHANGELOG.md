@@ -207,7 +207,7 @@ skip-ink: auto` was added separately once the shared tooling's closed
   failing when `theme-default` cannot be found. Added
   `tooling/test/resolve-template-dir.test.mjs`.
 
-## 2.0.0 - Unreleased (task packet S2-T14)
+## [2.0.0] - 2026-09-22
 
 ### Added
 

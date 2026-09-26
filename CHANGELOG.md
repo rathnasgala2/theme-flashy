@@ -16,6 +16,66 @@ next version; bumping `package.json`'s `version` for that release is an
 owner decision (recommended: `2.1.0`, since nothing below is a breaking
 change to the token/CSS-hook contract).
 
+### Changed (Contract 2.1.0 adoption, 2026-09-25)
+
+- `theme.json`: `contractVersion` moved to `2.1.0`, `stylingContractDigest`
+  copied from `@rathnasgala2/template`'s own published `catalogDigest` for
+  that contract revision. `cssLayers`/`stylesheets` are unchanged (this
+  theme's three-file shape has no `gala-base` layer of its own — that
+  layer is template-owned).
+- Removed the `components.css` rules the template's new `gala-base` layer
+  now provides: `img`'s duplicate `max-width: 100%` (`gala-base` also adds
+  `height: auto`), and the header/main/footer fixed `padding` declarations
+  (`gala-base` now supplies a responsive step). Removed the fifth inert
+  `outline-color` declaration, under `forced-colors`, on `#main-content`
+  (THD-H1: the four others were already removed; this one was missed).
+- Aligned `color-focus` with `color-accent` in the dark palette (light
+  already matched): `gala-base` is the layer that now paints
+  `outline-style` for the focus ring, so this theme's only remaining job
+  is handing it an on-brand color via the token.
+
+### Changed (THF-H1, THF-M1, THF-M2, THF-M3, THD-H8, THF-L1, THF-L2, 2026-09-25)
+
+- **THF-H1**: built the theme's actual visual thesis instead of four
+  sub-pixel refinements — an accent `border-top` band on the header, an
+  accent `border-bottom` rule under `h1`/`h2`, accent `li::marker`s, and
+  an accent-filled `article-end` block using `color-on-accent` as real
+  foreground text for the first time.
+- **THF-M1**: reverted `--gala-border-width` to a 1px hairline in both
+  palettes (it was 2px, doubling every structural border/rule/`hr`/
+  `select` the base rules were metricked for at 1px) and doubled it
+  per-rule, via `calc(var(--gala-border-width) * 2)`, on every
+  accent-adjacent element instead (`blockquote`, `pre`, the new header
+  and heading accent rules).
+- **THF-M2**: the shared `@rathnasgala2/theme-tooling` contrast gate this
+  repository depends on now checks `color-accent on color-canvas` (3:1,
+  both palettes) — the accent-as-border-color pairing this theme's own
+  CSS renders. `color-accent on color-code-canvas` (the `pre` rule) is
+  not independently gated by that shared script; manually verified to
+  clear 3:1 in both palettes.
+- **THF-M3**: toned down the underline treatment (`text-decoration-
+thickness`/`text-underline-offset` from 0.15em/0.2em to 0.1em/0.15em)
+  to mitigate the `text-decoration-skip-ink` gap issue the more
+  aggressive values made worse; the property itself remains blocked by
+  the shared tooling's closed CSS property grammar.
+- **THD-H8**: shipped this theme's first decorative asset —
+  `mark-spark.svg`, a 16x16 sanitizer-clean passive SVG mark declared in
+  `theme.json.assets`/`package.json.files`, tiled as a `background-image`
+  over the accent-filled `article-end` block.
+- **THF-L1**: folded the `header-actions` slot's `gap` into its one base
+  declaration (`space-3`), removing a duplicate override that existed only
+  because the base rule had been copied rather than parameterized.
+- **THF-L2**: dropped the internal `S2-T14` task-packet reference from the
+  character-block comment in `components.css`.
+
+### Changed (Pins and generated evidence, 2026-09-25)
+
+- CI (`ci.yml`, `nightly.yml`, `release.yaml`): sibling checkouts re-pinned
+  to `@rathnasgala2/theme-tooling` `68dceb3` and `@rathnasgala2/template`
+  `e66d877` (contract 2.1.0, unreleased).
+- `theme.json`'s digest cycle and `sbom.cdx.json` regenerated against the
+  above pins.
+
 ### Changed (THD-H1, 2026-09-25)
 
 - Removed the four inert `outline-color`/`outline-width` declaration pairs

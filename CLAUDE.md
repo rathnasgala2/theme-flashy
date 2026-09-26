@@ -3,7 +3,11 @@
 ## Purpose
 
 Own one of the five `@rathnasgala2/theme-*` presentation packages —
-`@rathnasgala2/theme-flashy` (high-saturation magenta accent with bold weights, a thicker default `border-width`/`focus-width`, generously rounded `radius-*`, an accent-colored blockquote/code-block rule and a thicker underline on links.) —
+`@rathnasgala2/theme-flashy` (high-saturation magenta accent with bold
+weights, an accent-chrome header and heading rule, accent list markers,
+an accent-filled article-end block with a passive SVG mark, generously
+rounded `radius-*`, and a doubled emphasis border on every accent-
+adjacent rule) —
 selected by a publication's own `appearance.theme`, never the build
 fallback (that is `@rathnasgala2/theme-default`, S2-T13). This repository
 never owns rendering, deployment, provider credentials, or any other

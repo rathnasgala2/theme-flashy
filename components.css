@@ -258,7 +258,8 @@
   }
 
   [data-gala-publication-root] blockquote {
-    border-inline-start-color: var(--gala-color-accent);
+    border-inline-start: calc(var(--gala-border-width) * 2) solid
+      var(--gala-color-accent);
   }
 
   [data-gala-publication-root] pre {

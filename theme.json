@@ -61,7 +61,7 @@
     "slot-header-actions"
   ],
   "tokens": [
-    { "key": "border-width", "type": "length", "light": "2px", "dark": "2px" },
+    { "key": "border-width", "type": "length", "light": "1px", "dark": "1px" },
     {
       "key": "color-accent",
       "type": "color",
@@ -248,14 +248,14 @@
       "path": "tokens.css",
       "mediaType": "text/css",
       "byteLength": "5994",
-      "sha256": "sha256:b713ce30e0fb632ec5e407d5cd8d01219455630159b3d1b9716793536bff687a",
+      "sha256": "sha256:72b8e9259460392f5c9a4d86b206e0754b0bcb8b8048fa8d89a9d45eff146ed9",
       "license": "Apache-2.0"
     },
     {
       "path": "components.css",
       "mediaType": "text/css",
-      "byteLength": "7747",
-      "sha256": "sha256:16d3eb90897e174401cfd4ba0aa157b23c66b7139579bf7a84d211c412055090",
+      "byteLength": "7788",
+      "sha256": "sha256:8dc16709a93c4fc3296d57bc85db2b00ad14c4af758a9fca1c8a24f1da2d92a0",
       "license": "Apache-2.0"
     },
     {
@@ -274,13 +274,13 @@
     "fixture-token-catalog-contrast"
   ],
   "browserPolicyRef": "gala-theme-css-v2-20211224",
-  "integrity": "sha256:d70430302fa6e5e4bc54f9d6f3f980a3b964b9207a3fd12a21bfd132aad35b9c",
+  "integrity": "sha256:3677fc88b71a97ad6c7e47e446c5292429bc8f17103b4b77d69b118d381370b0",
   "budgets": {
     "maximumFileBytes": "16384",
     "maximumTotalBytes": "40960",
     "maximumFiles": 8
   },
   "fixtureDigest": "sha256:391253bd4336e245bf892017b88f56f0c9f70802f4525fe1b812f5d0f4f5c4e6",
-  "evidenceDigest": "sha256:6446a33269f14e22ff7132d21bd237a45a42e4388cfa54f607b61e7320d85c2d",
+  "evidenceDigest": "sha256:76c5f73d73598645d902f6c14fa039941f78fd946818453b7952c0bd7e8a5133",
   "stylingContractDigest": "sha256:9abf99b73a20e034c784ec9648d1f96ea59b59b2ba89028b8c684d1b078275e4"
 }

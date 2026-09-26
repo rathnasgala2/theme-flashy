@@ -65,7 +65,7 @@
       "key": "color-accent",
       "type": "color",
       "light": "#c400a0",
-      "dark": "#ff7ae0"
+      "dark": "#f52ec2"
     },
     {
       "key": "color-border",
@@ -101,13 +101,13 @@
       "key": "color-focus",
       "type": "color",
       "light": "#c400a0",
-      "dark": "#ff7ae0"
+      "dark": "#f52ec2"
     },
     {
       "key": "color-link",
       "type": "color",
       "light": "#c400a0",
-      "dark": "#ff7ae0"
+      "dark": "#f52ec2"
     },
     {
       "key": "color-link-visited",
@@ -142,8 +142,8 @@
     {
       "key": "color-surface-raised",
       "type": "color",
-      "light": "#ecdcfb",
-      "dark": "#2a1740"
+      "light": "#e0c8f5",
+      "dark": "#382454"
     },
     {
       "key": "color-text",
@@ -247,7 +247,7 @@
       "path": "tokens.css",
       "mediaType": "text/css",
       "byteLength": "5994",
-      "sha256": "sha256:72b8e9259460392f5c9a4d86b206e0754b0bcb8b8048fa8d89a9d45eff146ed9",
+      "sha256": "sha256:a880bc915ba725cc1c08efdcf7d8a52d100e1ae80bec1c4969a8824920b2a78b",
       "license": "Apache-2.0"
     },
     {
@@ -280,13 +280,13 @@
     "fixture-token-catalog-contrast"
   ],
   "browserPolicyRef": "gala-theme-css-v2-20211224",
-  "integrity": "sha256:d4101db71e1305b76ee205996cce60a70e09e547c9496f2975a013827403a024",
+  "integrity": "sha256:f35d28118b8666634f06f7896bf5ee321540a7c59228167ad3fe1c2e965133c3",
   "budgets": {
     "maximumFileBytes": "16384",
     "maximumTotalBytes": "40960",
     "maximumFiles": 8
   },
   "fixtureDigest": "sha256:58869112bfea7303cd471030eaaab29cc08a44c38780209e0257495419ec9a01",
-  "evidenceDigest": "sha256:0be488c43065c2a1880fdd77dfbc3314fdced3acb54adf0a43e7507daf5cabe9",
+  "evidenceDigest": "sha256:98438d230aff8d80e8a44f9e591a3e77aa20ba4c4703e2aeaac311e00fb51e5d",
   "stylingContractDigest": "sha256:9abf99b73a20e034c784ec9648d1f96ea59b59b2ba89028b8c684d1b078275e4"
 }

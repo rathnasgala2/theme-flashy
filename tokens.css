@@ -25,7 +25,7 @@
     --gala-color-selection: #f6c6ea;
     --gala-color-success: #046b39;
     --gala-color-surface: #f6eefc;
-    --gala-color-surface-raised: #ecdcfb;
+    --gala-color-surface-raised: #e0c8f5;
     --gala-color-text: #150a1e;
     --gala-color-text-muted: #5a4a68;
     --gala-color-warning: #a15c00;
@@ -50,20 +50,20 @@
   @media (prefers-color-scheme: dark) {
     [data-gala-publication-root] {
       --gala-border-width: 1px;
-      --gala-color-accent: #ff7ae0;
+      --gala-color-accent: #f52ec2;
       --gala-color-border: #8f78ab;
       --gala-color-canvas: #12081a;
       --gala-color-code-canvas: #1e0f2c;
       --gala-color-code-text: #f7ecff;
       --gala-color-danger: #ff8fa3;
-      --gala-color-focus: #ff7ae0;
-      --gala-color-link: #ff7ae0;
+      --gala-color-focus: #f52ec2;
+      --gala-color-link: #f52ec2;
       --gala-color-link-visited: #c79bff;
       --gala-color-on-accent: #1a0a22;
       --gala-color-selection: #4a1f42;
       --gala-color-success: #63e6a0;
       --gala-color-surface: #1e0f2c;
-      --gala-color-surface-raised: #2a1740;
+      --gala-color-surface-raised: #382454;
       --gala-color-text: #f7ecff;
       --gala-color-text-muted: #cdb8e6;
       --gala-color-warning: #ffd166;
@@ -101,7 +101,7 @@
     --gala-color-selection: #f6c6ea;
     --gala-color-success: #046b39;
     --gala-color-surface: #f6eefc;
-    --gala-color-surface-raised: #ecdcfb;
+    --gala-color-surface-raised: #e0c8f5;
     --gala-color-text: #150a1e;
     --gala-color-text-muted: #5a4a68;
     --gala-color-warning: #a15c00;
@@ -125,20 +125,20 @@
   }
   [data-gala-publication-root][data-gala-resolved-color-mode="dark"] {
     --gala-border-width: 1px;
-    --gala-color-accent: #ff7ae0;
+    --gala-color-accent: #f52ec2;
     --gala-color-border: #8f78ab;
     --gala-color-canvas: #12081a;
     --gala-color-code-canvas: #1e0f2c;
     --gala-color-code-text: #f7ecff;
     --gala-color-danger: #ff8fa3;
-    --gala-color-focus: #ff7ae0;
-    --gala-color-link: #ff7ae0;
+    --gala-color-focus: #f52ec2;
+    --gala-color-link: #f52ec2;
     --gala-color-link-visited: #c79bff;
     --gala-color-on-accent: #1a0a22;
     --gala-color-selection: #4a1f42;
     --gala-color-success: #63e6a0;
     --gala-color-surface: #1e0f2c;
-    --gala-color-surface-raised: #2a1740;
+    --gala-color-surface-raised: #382454;
     --gala-color-text: #f7ecff;
     --gala-color-text-muted: #cdb8e6;
     --gala-color-warning: #ffd166;

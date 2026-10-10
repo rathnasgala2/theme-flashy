@@ -1,6 +1,6 @@
 {
   "name": "@rathnasgala2/theme-flashy",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
@@ -8,7 +8,6 @@
   },
   "files": [
     "components.css",
-    "mark-spark.svg",
     "print.css",
     "theme.json",
     "tokens.css"

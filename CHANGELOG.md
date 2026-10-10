@@ -4,6 +4,28 @@ All notable changes to `@rathnasgala2/theme-flashy` are documented here.
 
 ## Unreleased
 
+## 3.0.0 - 2026-10-10
+
+Breaking. This theme moves onto theme contract 3 with the approved Flashy
+preview values, with no compatibility with 2.x.
+
+- `theme.json` now carries the 116-token contract (schema 3.0.0) with the
+  Flashy values, `contractVersion` 3.0.0, `templateRange` `^3.0.0` and the
+  template styling contract 3.0.0 digest. The old 35-token catalog and its
+  token keys are gone.
+- `tokens.css` is generated from `theme.json` (`tokens:generate`) and checked
+  by `tokens:check`.
+- `components.css` shrank to a few skin rules; layout and components now live
+  in the template's base layer. Only the 11 hooks the CSS uses are listed in
+  `slotHooks`.
+- `print.css` keeps the same rules.
+- Removed `mark-spark.svg`; nothing uses it any more.
+- Button and panel gradients start from a deeper coral (`#d63a16`) than the
+  preview so light text clears 4.5:1 at every stop; dark-mode buttons use dark
+  text (`#1a0d05`) for the same reason.
+- Size budgets raised to 32768 bytes per file and 98304 in total.
+- CI pins the template 3.0.1 and theme-tooling 0.3.0 commits for contract 3.
+
 ## 2.1.0 - 2026-09-26
 
 ### Fixed (THD-M6, 2026-09-26 fourth pass)

@@ -4,6 +4,20 @@ All notable changes to `@rathnasgala2/theme-flashy` are documented here.
 
 ## Unreleased
 
+## 4.0.0 - 2026-10-11
+
+Breaking. Flashy is now the generation-4 Visual theme; v3 remains available
+from its preserved Git baseline tag.
+
+- Upgraded the package, theme contract, and template range to 4.0.0.
+- Added the closed Visual composition: gallery home, full-bleed article,
+  portfolio author page, image-grid listings, minimal header, compact footer,
+  mixed media ratios, and comfortable density.
+- Preserved Flashy's existing token palettes and CSS skin unchanged.
+- Validation consumes theme tooling from an explicit source checkout; it
+  installs integrity-checked vendored Schema 3.8.0 and Template 4.0.0
+  archives. This delivery does not publish to npm.
+
 ## 3.0.0 - 2026-10-10
 
 Breaking. This theme moves onto theme contract 3 with the approved Flashy

@@ -16,7 +16,7 @@ from its preserved Git baseline tag.
 - Preserved Flashy's existing token palettes and CSS skin unchanged.
 - Validation consumes theme tooling from an explicit source checkout; it
   installs integrity-checked vendored Schema 3.8.0 and Template 4.0.0
-  archives. This delivery does not publish to npm.
+  archives. The release workflow publishes it to npm with trusted-publishing provenance.
 
 ## 3.0.0 - 2026-10-10
 

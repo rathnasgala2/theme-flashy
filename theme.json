@@ -2,9 +2,9 @@
   "schemaId": "urn:gala:schema:theme-contract:2.0.0",
   "schemaVersion": "2.0.0",
   "themeId": "flashy",
-  "package": "@rathnasgala2/theme-flashy@4.0.0",
+  "package": "@rathnasgala2/theme-flashy@4.1.0",
   "contractVersion": "4.0.0",
-  "templateRange": "^4.0.0",
+  "templateRange": "^4.1.0",
   "composition": {
     "schemaId": "urn:gala:schema:template-composition:2.0.0",
     "schemaVersion": "2.0.0",
@@ -666,13 +666,90 @@
     },
     { "key": "weight-ui", "type": "font-weight", "light": "560", "dark": "560" }
   ],
+  "palette": {
+    "profile": "gala-palette-follow-v1",
+    "follow": [
+      { "key": "border-button", "light": [null], "dark": [null] },
+      { "key": "border-card", "light": ["canvas"], "dark": ["canvas"] },
+      { "key": "border-chip", "light": [null], "dark": [null] },
+      { "key": "border-media-divider", "light": [], "dark": [] },
+      { "key": "border-quote", "light": ["accent"], "dark": ["accent"] },
+      { "key": "border-row-divider", "light": [], "dark": [] },
+      { "key": "border-section-rule", "light": [], "dark": [] },
+      { "key": "color-accent", "light": ["accent"], "dark": ["accent"] },
+      { "key": "color-border", "light": ["canvas"], "dark": ["canvas"] },
+      { "key": "color-btn-panel", "light": ["canvas"], "dark": ["canvas"] },
+      {
+        "key": "color-btn-panel-text",
+        "light": ["accent"],
+        "dark": ["accent"]
+      },
+      { "key": "color-btn-text", "light": ["canvas"], "dark": ["canvas"] },
+      { "key": "color-canvas", "light": ["canvas"], "dark": ["canvas"] },
+      { "key": "color-chip-text", "light": ["accent"], "dark": ["accent"] },
+      { "key": "color-focus", "light": ["accent"], "dark": ["accent"] },
+      { "key": "color-footer", "light": ["canvas"], "dark": ["canvas"] },
+      { "key": "color-header", "light": ["canvas"], "dark": ["canvas"] },
+      { "key": "color-icon-accent", "light": ["accent"], "dark": ["accent"] },
+      { "key": "color-link", "light": ["accent"], "dark": ["accent"] },
+      {
+        "key": "color-link-underline",
+        "light": ["accent"],
+        "dark": ["accent"]
+      },
+      {
+        "key": "color-link-underline-hover",
+        "light": ["accent"],
+        "dark": ["accent"]
+      },
+      { "key": "color-on-accent", "light": ["canvas"], "dark": ["canvas"] },
+      { "key": "color-panel-text", "light": ["canvas"], "dark": ["canvas"] },
+      { "key": "color-selection", "light": ["accent"], "dark": ["accent"] },
+      { "key": "color-surface", "light": ["canvas"], "dark": ["canvas"] },
+      {
+        "key": "color-surface-raised",
+        "light": ["canvas"],
+        "dark": ["canvas"]
+      },
+      { "key": "color-text", "light": ["text"], "dark": ["text"] },
+      { "key": "color-text-faint", "light": ["text"], "dark": ["text"] },
+      { "key": "color-text-muted", "light": ["text"], "dark": ["text"] },
+      { "key": "color-toc-active-text", "light": ["text"], "dark": ["text"] },
+      {
+        "key": "paint-button",
+        "light": ["accent", null],
+        "dark": ["accent", null]
+      },
+      {
+        "key": "paint-chip",
+        "light": ["accent", "accent"],
+        "dark": ["accent", null]
+      },
+      {
+        "key": "paint-page-decor",
+        "light": ["accent", null],
+        "dark": [null, null]
+      },
+      {
+        "key": "paint-panel",
+        "light": ["accent", null, null],
+        "dark": ["accent", null, null]
+      },
+      {
+        "key": "shadow-avatar-ring",
+        "light": ["canvas", "canvas"],
+        "dark": ["canvas", "canvas"]
+      },
+      { "key": "shadow-button", "light": [null], "dark": [null] }
+    ]
+  },
   "modes": ["dark", "light", "system"],
   "assets": [
     {
       "path": "tokens.css",
       "mediaType": "text/css",
-      "byteLength": "19637",
-      "sha256": "sha256:85a1b1c397bc9d0fcb10991b03f323925e4fb8353c086cc010700dd0f14dda9b",
+      "byteLength": "12841",
+      "sha256": "sha256:75cbff4f751d6635745eafbcae61bfb4275572f1e76e1cdfd0530e6cfa9a8284",
       "license": "Apache-2.0"
     },
     {
@@ -698,13 +775,13 @@
     "fixture-token-catalog-contrast"
   ],
   "browserPolicyRef": "gala-theme-css-v2-20211224",
-  "integrity": "sha256:6f1469df8ea067dc6eecce429a6eab6bde98cd2647d90f17de2be9a1f14d4ed3",
+  "integrity": "sha256:58452b6b16ab91a65730558c6778f26532c44332c0706aeb2c133ec716558f3f",
   "budgets": {
     "maximumFileBytes": "32768",
     "maximumTotalBytes": "98304",
     "maximumFiles": 8
   },
   "fixtureDigest": "sha256:75267c3c8593f553e3dde7265593e4c0c5582139bb4344ecb0a3b768c6e0f4c4",
-  "evidenceDigest": "sha256:09b20fca1ace82e0a2d763abb922ad730afb6504f7834691798d97cd48271e96",
+  "evidenceDigest": "sha256:f0d7077f43680f36a49815e93023580d1c0db6f164c5b7860aea154fe857f5d5",
   "stylingContractDigest": "sha256:63a76754b591a3cda91a4be1f43bdb3fe1d44cf4f9be766154f3944a043399b5"
 }

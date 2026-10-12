@@ -2,7 +2,7 @@
 
 The vibrant, rounded Visual theme (coral-to-violet gradients, playful but
 legible) for Galascribe portable publications using
-`@rathnasgala2/template@^4.0.0`. This package is a **closed, passive file
+`@rathnasgala2/template@^4.1.0`. This package is a **closed, passive file
 set**: JSON and CSS only, with no JavaScript, build step, runtime dependency,
 lifecycle script, external URL, or runtime font request.
 

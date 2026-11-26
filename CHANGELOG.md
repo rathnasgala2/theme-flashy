@@ -8,7 +8,10 @@ All notable changes to `@rathnasgala2/theme-flashy` are documented here.
 
 - The newsletter panel's muted text (`color-panel-muted`) is solid white instead
   of white at 78%, so its small label and paragraph clear 4.5:1 on every stop
-  of the panel gradient in both modes. No other token changed.
+  of the panel gradient in both modes. The light and dark panel gradient's first
+  two stops are a little darker (`#d63a16` to `#c93615`, `#b030e0` to
+  `#a320d5`, hue unchanged) so rendered 12px text clears 4.5:1 across the blend.
+  No other token changed.
 - Gated by theme-tooling at the commit that checks this pair.
 
 ## 4.2.0 - 2026-10-21

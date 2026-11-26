@@ -4,6 +4,13 @@ All notable changes to `@rathnasgala2/theme-flashy` are documented here.
 
 ## Unreleased
 
+## 4.2.1 - 2026-11-26
+
+- The newsletter panel's muted text (`color-panel-muted`) is solid white instead
+  of white at 78%, so its small label and paragraph clear 4.5:1 on every stop
+  of the panel gradient in both modes. No other token changed.
+- Gated by theme-tooling at the commit that checks this pair.
+
 ## 4.2.0 - 2026-10-21
 
 - Built against template 4.4.0 and styling contract 4.1.0 (new

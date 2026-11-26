@@ -2,7 +2,7 @@
   "schemaId": "urn:gala:schema:theme-contract:2.0.0",
   "schemaVersion": "2.0.0",
   "themeId": "flashy",
-  "package": "@rathnasgala2/theme-flashy@4.2.0",
+  "package": "@rathnasgala2/theme-flashy@4.2.1",
   "contractVersion": "4.1.0",
   "templateRange": "^4.4.0",
   "composition": {
@@ -248,8 +248,8 @@
     {
       "key": "color-panel-muted",
       "type": "color",
-      "light": "#ffffffc7",
-      "dark": "#ffffffc7"
+      "light": "#ffffff",
+      "dark": "#ffffff"
     },
     {
       "key": "color-panel-text",
@@ -748,8 +748,8 @@
     {
       "path": "tokens.css",
       "mediaType": "text/css",
-      "byteLength": "12841",
-      "sha256": "sha256:75cbff4f751d6635745eafbcae61bfb4275572f1e76e1cdfd0530e6cfa9a8284",
+      "byteLength": "12833",
+      "sha256": "sha256:7667f13ddfb207a7fc505bd97c7d0feef7c1ce5e761a6dd4cba982787ec5edb9",
       "license": "Apache-2.0"
     },
     {
@@ -775,13 +775,13 @@
     "fixture-token-catalog-contrast"
   ],
   "browserPolicyRef": "gala-theme-css-v2-20211224",
-  "integrity": "sha256:d680ac88718d4689871386c0b761a8d7d0288ef56bfeb60bf1dab6383b37f7ce",
+  "integrity": "sha256:c9b3088076cb1add2d8bef5d75df46aea73b018dc92a0e57a710eb69bc0284c2",
   "budgets": {
     "maximumFileBytes": "32768",
     "maximumTotalBytes": "98304",
     "maximumFiles": 8
   },
   "fixtureDigest": "sha256:13ed5fe2ae941d682c86f4a0ca9974b8b38285e8f95db295bb447bf127df95d2",
-  "evidenceDigest": "sha256:eed949bf17d361292946e214ee7710b8f399573f274cff8683066703dfd373ed",
+  "evidenceDigest": "sha256:d17019898df71396cad2d4aaf015e81fb4f2471e63d6b622eeb783ac08913dee",
   "stylingContractDigest": "sha256:4afdcb555d21fc205ab332a9e8996a09e1eb607053353c399eb070d0f0525f29"
 }
